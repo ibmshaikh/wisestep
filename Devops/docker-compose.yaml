@@ -1,0 +1,48 @@
+version: "3.8"
+services:
+  db:
+    image: mongo:latest
+    container_name: "db"
+    ports:
+      - 27017:27017
+    networks:
+      - mynetwork
+  redis:
+    image: "redis:alpine"
+    container_name: "redis"
+    environment:
+      - REDIS_PASSWORD=123456
+    ports:
+      - 6379:6379
+    networks:
+      - mynetwork
+  backend:
+    image: wisestep_mongo:latest
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+      - redis
+    environment:
+      - SMTP_HOST=smtp.gmail.com
+      - SMTP_PORT=587
+      - SMTP_USERNAME=ibrahimshaaikh72@gmail.com
+      - SMTP_PASSWORD=GShaikh72@1998
+      - REDIS_URL=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=123456
+      - DATABASE_HOST= db
+      - DATABASE_PORT=27017
+      - DATABASE_NAME=userdb
+    networks:
+      - mynetwork
+  frontend:
+    image: frontend:latest
+    ports:
+      - 80:3000
+    depends_on:
+      - backend
+    networks:
+      - mynetwork
+networks:
+  mynetwork:
