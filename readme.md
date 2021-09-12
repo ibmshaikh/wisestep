@@ -9,7 +9,7 @@ Go to below URL to access the application
 **Features**
 1. Login.
 2. Registration.
-3. 2-Factor Authentication with Email.
+3. 2-Factor Authentication with Email(with OTP expiration).
 4. Single Session of user.
 
 **Tech Stack Used**
