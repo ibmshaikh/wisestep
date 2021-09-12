@@ -8,7 +8,7 @@ I have uploaded backend and frontend artifact in Dockerhub so no need to build t
 You can find Dockerfile of Backend and Frontend in their respective folder if you want.
 
 
-Just copy docker-compose.yaml in your computer, and open the file and replace SMTP values with your value. and run below command
+Just copy docker-compose.yaml in your computer, and open the file and replace SMTP values with your value that's it no other configuration are needed. and run below command inside docker-compose.yaml file folder.
 
 `docker-compose up`
 
