@@ -16,7 +16,7 @@ Go to below URL to access the application
 1. Spring Boot (Backend)
 2. React JS (Frontend)
 3. Redis
-4. MongoDB
+4. MySQL
 5. AWS (Hosting)
 
 **Versions**
