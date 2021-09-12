@@ -1,6 +1,6 @@
-**Wisestep Assignment**
+# Wisestep Assignment
 
-# How to test the application
+**How to test the application**
 
 Go to below URL to access the application
 
