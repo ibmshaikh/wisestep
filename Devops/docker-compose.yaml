@@ -24,10 +24,10 @@ services:
       - db
       - redis
     environment:
-      - SMTP_HOST=smtp.gmail.com
-      - SMTP_PORT=587
-      - SMTP_USERNAME=ibrahimshaaikh72@gmail.com
-      - SMTP_PASSWORD=GShaikh72@1998
+      - SMTP_HOST={REPLACE_WITH_YOUR_STMP_HOSTNAME}
+      - SMTP_PORT={REPLACE_WITH_YOUR_STMP_PORT}
+      - SMTP_USERNAME={REPLACE_WITH_YOUR_STMP_EMAIL}
+      - SMTP_PASSWORD={REPLACE_WITH_YOUR_STMP_PASSWORD}
       - REDIS_URL=redis
       - REDIS_PORT=6379
       - REDIS_PASSWORD=123456
